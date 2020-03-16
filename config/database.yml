@@ -1,0 +1,23 @@
+default: &default
+  database: depot
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 5
+  username: postgres
+  password: 123QWEasd
+ 
+  
+development:
+  <<: *default
+
+
+ 
+test:
+  <<: *default
+ 
+
+
+production:
+  <<: *default
+ 
